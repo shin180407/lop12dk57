@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lớp 12D K57</title>
+    <style>
+        /* Cài đặt chung */
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Thanh menu */
+        nav {
+            background: #004080;
+            padding: 15px;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        /* Phần Trang chủ với ảnh nền */
+        #home {
+            background: url('https://i.imgur.com/PFzpeGK.jpeg') no-repeat center center;
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        /* Hiệu ứng nâng tầng & đổ bóng cho từng phần */
+        section {
+            margin: 20px auto;
+            padding: 20px;
+            width: 80%;
+            border-radius: 10px;
+            box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
+            background-color: white;
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        }
+        section:hover {
+            transform: translateY(-5px);
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.4);
+        }
+
+        /* Màu sắc cho từng tiêu đề */
+        #info h2 { color: #007bff; }      /* Xanh dương */
+        #members h2 { color: #28a745; }   /* Xanh lá */
+        #activities h2 { color: #dc3545; } /* Đỏ */
+        #memories h2 { color: #6f42c1; }  /* Tím */
+        #messages h2 { color: #fd7e14; }  /* Cam */
+        #contact h2 { color: #ffc107; }   /* Vàng */
+
+        /* Phần hình ảnh */
+        .memories img, .activities img, .members img {
+            width: 300px;
+            height: auto;
+            margin: 10px;
+            border-radius: 10px;
+            box-shadow: 2px 2px 10px gray;
+            transition: transform 0.3s ease-in-out;
+        }
+        .memories img:hover, .activities img:hover, .members img:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <!-- Thanh menu -->
+    <nav>
+        <a href="#home">Trang chủ</a>
+        <a href="#info">Thông tin lớp</a>
+        <a href="#members">Thành viên</a>
+        <a href="#activities">Hoạt động</a>
+        <a href="#memories">Kỷ niệm</a>
+        <a href="#messages">Lời nhắn</a>
+        <a href="#contact">Liên hệ</a>
+    </nav>
+    
+    <!-- Phần Trang Chủ với ảnh nền -->
+    <section id="home">
+        <h1 style="color: white; background: rgba(0, 0, 0, 0.5); padding: 10px; border-radius: 5px;">Lớp 12D K57 (2022-2025) Trường THPT Văn Giang</h1>
+    </section>
+    
+    <!-- Thông tin lớp -->
+    <section id="info">
+        <h2>Thông tin lớp</h2>
+        <p><strong>Tên lớp:</strong> 12D</p>
+        <p><strong>Giáo viên chủ nhiệm:</strong> Cô Đào Thị Lan Hương</p>
+        <p><strong>Sĩ số:</strong> 46</p>
+    </section>
+    
+    <!-- Thành viên -->
+    <section id="members">
+        <h2>Thành viên</h2>
+        <img src="https://i.imgur.com/hoQbont.jpeg" alt="Ảnh thành viên">
+        <p><strong>Nguyễn Mạnh Dũng</strong></p>
+        <p><strong>Ngày sinh:</strong> 18/04/2007</p>
+    </section>
+    
+    <!-- Hoạt động -->
+    <section id="activities">
+        <h2>Hoạt động</h2>
+        <p>- TNHN ở Mai Châu, Hòa Bình</p>
+        <p>- Đi các di tích ở Hưng Yên</p>
+        <p>- Tham gia một số hoạt động của trường như: múa, thể thao, trò chơi...</p>
+        <p>- Tham gia hội chợ ngày 26/3/2025</p>
+        <div class="activities">
+            <img src="https://i.imgur.com/XHJGGnG.jpeg" alt="Hoạt động 1">
+            <img src="https://i.imgur.com/xDsMvKU.jpeg" alt="Hoạt động 2">
+            <img src="https://i.imgur.com/ouNviVV.jpeg" alt="Hoạt động 3">
+            <img src="https://i.imgur.com/WQRQsya.jpeg" alt="Hoạt động 4">
+        </div>
+    </section>
+    
+    <!-- Kỷ niệm -->
+    <section id="memories">
+        <h2>Kỷ niệm</h2>
+        <article>
+            <h3>Ba năm thanh xuân cùng 12D</h3>
+            <p>Ba năm cấp ba trôi qua như một giấc mơ. Những ngày đầu tiên bỡ ngỡ bước vào lớp 10, chúng ta chỉ là những con người xa lạ, nhưng qua bao nhiêu buổi học, giờ kiểm tra, những lần cùng nhau cười đùa, động viên nhau trước mỗi kỳ thi, chúng ta đã trở thành một gia đình thực sự.</p>
+        </article>
+        <div class="memories">
+            <img src="https://i.imgur.com/ej6YSTE.jpeg" alt="Kỷ niệm 1">
+            <img src="https://i.imgur.com/pWaC0qx.jpeg" alt="Kỷ niệm 2">
+            <img src="https://i.imgur.com/dYbdTys.jpeg" alt="Kỷ niệm 3">
+            <img src="https://i.imgur.com/UbJik71.jpeg" alt="Kỷ niệm 4">
+        </div>
+    </section>
+
+    <!-- Lời nhắn -->
+    <section id="messages">
+        <h2>Lời nhắn</h2>
+        <p>Cùng nhau đỗ nguyện vọng 1 nhé !!! 😆</p>
+    </section>
+    
+    <!-- Liên hệ -->
+    <section id="contact">
+        <h2>Liên hệ</h2>
+        <p>Email: nguyenmanhdung8a@gmail.com</p>
+    </section>
+</body>
+</html>
